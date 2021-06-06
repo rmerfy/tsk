@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tsk</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="logo">
+              <a class="logo__link" href="/">
+                <img src="images/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="header__address">
+              <img src="images/icons/marker.svg" alt="marker">
+              <span>Санкт-Петербург</span>
+            </div>
+            <form class="search">
+              <input type="text" placeholder="Чугунные воронки">
+              <button type="submit"><img src="images/icons/search.svg" alt="search"></button>
+            </form>
+            <div class="shop-nav">
+              <a class="basket" href="#">
+                <img src="images/icons/basket.svg" alt="basket">
+                <span class="basket__counter">99</span>
+              </a>
+              <a class="favorites" href="#">
+                <img src="images/icons/favorite.svg" alt="favorite">
+              </a>
+            </div>
+            <div class="contacts">
+              <ul class="contacts__socials">
+                <li><a href="#"><img src="images/icons/instagram.svg" alt="instagram"></a></li>
+                <li><a href="#"><img src="images/icons/youtube.svg" alt="youtube"></a></li>
+              </ul>
+              <div class="contacts__phones">
+                <div class="contacts__phone">
+                  <a href="tel:+78122453141"><img src="images/icons/phone.svg" alt="phone">+7 (812) 245 31 41</a>
+                  <span>Санкт-Петербург</span>
+                </div>
+                <div class="contacts__phone">
+                  <a href="tel:+74950320741"><img src="images/icons/phone.svg" alt="phone">+7 (495) 032 07 41</a>
+                  <span>Москва</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__nav">
+        <div class="container">
+          <nav class="menu">
+            <button aria-label="Закрыть" class="menu__close">
+              &times;
+            </button>
+            <ul class="menu__list">
+              <li class="menu-item-has-children"><a href="#">каталог</a><span class="carret"></span>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">
+                      <img src="images/menu-img.jpg" alt="menu">
+                      люки
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/menu-img.jpg" alt="menu">
+                      Товары со скидкой
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/menu-img.jpg" alt="menu">
+                      Решетки и крышки из ВЧШГ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/menu-img.jpg" alt="menu">
+                      Дождеприемники из ВЧШГ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/menu-img.jpg" alt="menu">
+                      Уличная и парковая
+                      мебель
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/menu-img.jpg" alt="menu">
+                      Чугунные воронки и трапы
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/menu-img.jpg" alt="menu">
+                      Запорная арматура из ВЧШГ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/menu-img.jpg" alt="menu">
+                      Водоотводные лотки
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">проектировщикам</a></li>
+              <li><a href="#">компания</a></li>
+              <li><a href="#">доставка и оплата</a></li>
+              <li><a href="#">контакты</a></li>
+            </ul>
+          </nav>
+          <button aria-label="Меню" class="menu-btn">
+            <img src="images/icons/burger.svg" alt="menu">
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="banner">
+        <div class="container">
+          <div class="banner__inner">
+            <div class="banner__content">
+              <h1 class="title banner__title">
+                Продажа литейной продукции <br> из высокопрочного чугуна
+              </h1>
+              <span class="banner__subtitle">
+                Разрабатываем изделия под заказ, по особым стандартам и требованиям заказчика по всей России
+              </span>
+            </div>
+            <form class="catalog-form form-send">
+
+              <input type="hidden" name="project_name" value="tsk">
+              <input type="hidden" name="admin_email" value="maddmerf@gmail.com">
+              <input type="hidden" name="form_subject" value="получить каталог продукции">
+
+              <div class="catalog-form__info">
+
+                <h2 class="catalog-form__title">
+                  Получить полный каталог продукции за 2021 год
+                </h2>
+                <div class="catalog-form__mailing">
+                  <input class="catalog-form__real" id="mailing" type="checkbox" name="рассылка" checked>
+                  <label for="mailing" class="catalog-form__fake">
+                  </label>
+                  Уберите галочку, если не хотите <br> получать рассылку
+                </div>
+                <div class="catalog-form__file">
+                  <img src="images/icons/pdf.svg" alt="pdf">
+                  <span>6 Mb <br> 30 секунд</span>
+                </div>
+
+              </div>
+              <div class="catalog-form__inputs">
+                <input class="input catalog-form__input" type="email" name="mail" placeholder="e-mail" required>
+                <input class="input catalog-form__input" type="tel" name="Номер" placeholder="номер телефона" required>
+                <button class="btn btn--orange" type="submit">
+                  <span>Оставить заявку</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="our-products">
+        <div class="container">
+          <h2 class="our-products__title">
+            Наша продукция
+          </h2>
+          <div class="our-products__items">
+
+            <div class="our-products__items-left">
+              <div class="our-products__item our-products__item--325px">
+                <a class="our-products__item-link" href="#">
+                  <h3 class="our-products__item-title">
+                    Люки
+                  </h3>
+                  <span class="our-products__item-descr">
+                    Для водоотведения дождевых и талых вод на городских и федеральных дорогах применяют дренажные
+                    системы
+                  </span>
+                  <img src="images/products/01.png" alt="01">
+                </a>
+              </div>
+
+              <div class="our-products__item">
+                <a class="our-products__item-link" href="#">
+                  <h3 class="our-products__item-title">
+                    Товары со скидкой
+                  </h3>
+                  <span class="our-products__item-descr">
+                    Для водоотведения дождевых и талых вод
+                  </span>
+                  <img src="images/products/02.png" alt="01">
+                </a>
+              </div>
+
+              <div class="our-products__item">
+                <a class="our-products__item-link" href="#">
+                  <h3 class="our-products__item-title">
+                    Решетки и крышки из ВЧШГ
+                  </h3>
+                  <span class="our-products__item-descr">
+                    Для водоотведения дождевых и талых вод
+                  </span>
+                  <img src="images/products/03.png" alt="01">
+                </a>
+              </div>
+
+              <div class="our-products__item our-products__item--325px">
+                <a class="our-products__item-link" href="#">
+                  <h3 class="our-products__item-title">
+                    Дождеприемники из ВЧШГ
+                  </h3>
+                  <span class="our-products__item-descr">
+                    Для водоотведения дождевых и талых вод
+                  </span>
+                  <img src="images/products/04.png" alt="01">
+                </a>
+              </div>
+
+
+
+              <div class="our-products__item our-products__item--440px">
+                <a class="our-products__item-link" href="#">
+                  <h3 class="our-products__item-title">
+                    Чугунные воронки и трапы
+                  </h3>
+                  <span class="our-products__item-descr">
+                    Для водоотведения дождевых и талых вод на городских и федеральных дорогах применяют дренажные
+                    системы
+                  </span>
+                  <img src="images/products/06.png" alt="01">
+                </a>
+              </div>
+
+              <div class="our-products__item our-products__item--440px">
+                <a class="our-products__item-link" href="#">
+                  <h3 class="our-products__item-title">
+                    Запорная арматура из ВЧШГ
+                  </h3>
+                  <span class="our-products__item-descr">
+                    Для водоотведения дождевых и талых вод на городских и федеральных дорогах применяют дренажные
+                    системы
+                  </span>
+                  <img src="images/products/07.png" alt="01">
+                </a>
+              </div>
+
+              <div class="our-products__item">
+                <a class="our-products__item-link" href="#">
+                  <h3 class="our-products__item-title">
+                    Водоотводные лотки
+                  </h3>
+                  <span class="our-products__item-descr">
+                    Для водоотведения дождевых и талых вод
+                  </span>
+                  <img src="images/products/08.png" alt="01">
+                </a>
+              </div>
+            </div>
+
+            <div class="our-products__item our-products__item--right">
+              <a class="our-products__item-link" href="#">
+                <h3 class="our-products__item-title">
+                  Уличная и парковая мебель
+                </h3>
+                <span class="our-products__item-descr">
+                  Для водоотведения дождевых и талых вод на городских и федеральных дорогах применяют дренажные системы
+                </span>
+                <img src="images/products/05.png" alt="01">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__content">
+              <div class="about__content-inner">
+                <h2 class="title about__title">
+                  О компании
+                </h2>
+                <div class="about__content-text">
+                  <p>
+                    ООО ГК «ТрансСтройКомплект» является эксклюзивным дистрибьютором завода ООО «Азертехнолайн» на
+                    территории
+                    Российской Федерации. ООО «Азертехнолайн» является крупнейшим заводом чугунного литья в Республике
+                    Азербайджан.
+                  </p>
+                  <p>
+                    В работе с партнёрами мы стараемся учесть все особенности данной организации, предложить наиболее
+                    эффективные решения с точки зрения стоящих задач и бюджета. Мы практикуем гибкий подход к
+                    сотрудничеству
+                    и
+                    стараемся выполнять все пожелания наших заказчиков.
+                  </p>
+                </div>
+                <a class="btn about__btn" href="#">
+                  <span>Подробнее</span>
+                </a>
+              </div>
+            </div>
+            <div class="about__info">
+              <q class="about__quote">
+                Наша цель - стать <strong>надежным поставщиком высокотехнологичного оборудования</strong> с целью
+                увеличения
+                эффективности
+                предприятий и улучшения качества жизни человека.
+              </q>
+              <div class="customers">
+                <h2 class="customers__title">
+                  Нам доверяют:
+                </h2>
+                <div class="customers__items">
+                  <div class="customers__item">
+                    <img src="images/customers/01.png" alt="01">
+                  </div>
+                  <div class="customers__item">
+                    <img src="images/customers/02.png" alt="01">
+                  </div>
+                  <div class="customers__item">
+                    <img src="images/customers/01.png" alt="01">
+                  </div>
+                  <div class="customers__item">
+                    <img src="images/customers/02.png" alt="01">
+                  </div>
+                  <div class="customers__item">
+                    <img src="images/customers/01.png" alt="01">
+                  </div>
+                  <div class="customers__item">
+                    <img src="images/customers/02.png" alt="01">
+                  </div>
+                  <div class="customers__item">
+                    <img src="images/customers/01.png" alt="01">
+                  </div>
+                  <div class="customers__item">
+                    <img src="images/customers/02.png" alt="01">
+                  </div>
+                  <div class="customers__item">
+                    <img src="images/customers/01.png" alt="01">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <h2 class="title popular__title">
+          Популярная продукция
+        </h2>
+        <div class="container-slider">
+          <div class="swiper-container popular__items">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <span class="product-card__info">Под заказ</span>
+                  <img src="images/product-cards/01.jpg" alt="01">
+                  <a class="product-card__link" href="#">
+                    <h3 class="product-card__title">
+                      ЛЮК СВЕРХТЯЖЕЛЫЙ УСИЛЕННЫЙ
+                    </h3>
+                  </a>
+                  <span class="product-card__descr">
+                    H-100 ТИП СТУ(F900)-7.2-80 ВЧ-50
+                  </span>
+                  <div class="product-card__details">
+                    <div class="product-card__available">
+                      <span class="product-card__details-name">Наличие:</span>
+                      <span class="product-card__details-value">В наличии</span>
+                    </div>
+                    <div class="product-card__price">
+                      <span class="product-card__details-name">Цена</span>
+                      <span class="product-card__details-value product-card__details-value--price">27 500 р</span>
+                    </div>
+                  </div>
+                  <a class="product-card__btn btn" href="#">
+                    <span>В корзину</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <span class="product-card__info">Под заказ</span>
+                  <img src="images/product-cards/01.jpg" alt="01">
+                  <a class="product-card__link" href="#">
+                    <h3 class="product-card__title">
+                      ЛЮК СВЕРХТЯЖЕЛЫЙ УСИЛЕННЫЙ
+                    </h3>
+                  </a>
+                  <span class="product-card__descr">
+                    H-100 ТИП СТУ(F900)-7.2-80 ВЧ-50
+                  </span>
+                  <div class="product-card__details">
+                    <div class="product-card__available">
+                      <span class="product-card__details-name">Наличие:</span>
+                      <span class="product-card__details-value">В наличии</span>
+                    </div>
+                    <div class="product-card__price">
+                      <span class="product-card__details-name">Цена</span>
+                      <span class="product-card__details-value product-card__details-value--price">27 500 р</span>
+                    </div>
+                  </div>
+                  <a class="product-card__btn btn" href="#">
+                    <span>В корзину</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <span class="product-card__info">Под заказ</span>
+                  <img src="images/product-cards/01.jpg" alt="01">
+                  <a class="product-card__link" href="#">
+                    <h3 class="product-card__title">
+                      ЛЮК СВЕРХТЯЖЕЛЫЙ УСИЛЕННЫЙ
+                    </h3>
+                  </a>
+                  <span class="product-card__descr">
+                    H-100 ТИП СТУ(F900)-7.2-80 ВЧ-50
+                  </span>
+                  <div class="product-card__details">
+                    <div class="product-card__available">
+                      <span class="product-card__details-name">Наличие:</span>
+                      <span class="product-card__details-value">В наличии</span>
+                    </div>
+                    <div class="product-card__price">
+                      <span class="product-card__details-name">Цена</span>
+                      <span class="product-card__details-value product-card__details-value--price">27 500 р</span>
+                    </div>
+                  </div>
+                  <a class="product-card__btn btn" href="#">
+                    <span>В корзину</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <span class="product-card__info">Под заказ</span>
+                  <img src="images/product-cards/01.jpg" alt="01">
+                  <a class="product-card__link" href="#">
+                    <h3 class="product-card__title">
+                      ЛЮК СВЕРХТЯЖЕЛЫЙ УСИЛЕННЫЙ
+                    </h3>
+                  </a>
+                  <span class="product-card__descr">
+                    H-100 ТИП СТУ(F900)-7.2-80 ВЧ-50
+                  </span>
+                  <div class="product-card__details">
+                    <div class="product-card__available">
+                      <span class="product-card__details-name">Наличие:</span>
+                      <span class="product-card__details-value">В наличии</span>
+                    </div>
+                    <div class="product-card__price">
+                      <span class="product-card__details-name">Цена</span>
+                      <span class="product-card__details-value product-card__details-value--price">27 500 р</span>
+                    </div>
+                  </div>
+                  <a class="product-card__btn btn" href="#">
+                    <span>В корзину</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <span class="product-card__info">Под заказ</span>
+                  <img src="images/product-cards/01.jpg" alt="01">
+                  <a class="product-card__link" href="#">
+                    <h3 class="product-card__title">
+                      ЛЮК СВЕРХТЯЖЕЛЫЙ УСИЛЕННЫЙ
+                    </h3>
+                  </a>
+                  <span class="product-card__descr">
+                    H-100 ТИП СТУ(F900)-7.2-80 ВЧ-50
+                  </span>
+                  <div class="product-card__details">
+                    <div class="product-card__available">
+                      <span class="product-card__details-name">Наличие:</span>
+                      <span class="product-card__details-value">В наличии</span>
+                    </div>
+                    <div class="product-card__price">
+                      <span class="product-card__details-name">Цена</span>
+                      <span class="product-card__details-value product-card__details-value--price">27 500 р</span>
+                    </div>
+                  </div>
+                  <a class="product-card__btn btn" href="#">
+                    <span>В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn popular__btn" href="#">
+          <span>Перейти в каталог</span>
+        </a>
+        <div class="popular__items-prev swiper-button-prev"></div>
+        <div class="popular__items-next swiper-button-next"></div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <h2 class="features__title">Преимущества работы с нами</h2>
+          <div class="features__items">
+            <div class="features__item">
+              <img src="images/features/01.svg" alt="01">
+              <h3 class="features__item-title">
+                Наличие продукции на складе
+              </h3>
+            </div>
+            <div class="features__item">
+              <img src="images/features/02.svg" alt="01">
+              <h3 class="features__item-title">
+                Мы фанаты своей работы
+              </h3>
+            </div>
+            <div class="features__item">
+              <img src="images/features/03.svg" alt="01">
+              <h3 class="features__item-title">
+                Сертифицированная продукция
+              </h3>
+            </div>
+            <div class="features__item">
+              <img src="images/features/04.svg" alt="01">
+              <h3 class="features__item-title">
+                Индивидуальный подход к клиенту
+              </h3>
+            </div>
+            <div class="features__item">
+              <img src="images/features/05.svg" alt="01">
+              <h3 class="features__item-title">
+                Конструкторский отдел
+              </h3>
+            </div>
+          </div>
+          <a class="btn features__btn" href="#">
+            <span>Подробнее о компании</span>
+          </a>
+        </div>
+      </section>
+      <section class="our-objects">
+        <h2 class="title our-objects__title">Наши объекты</h2>
+        <div class="our-objects__wrapper">
+          <div class="container-slider">
+            <div class="swiper-container objects-slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="objects-slider__item">
+                    <img src="images/our-objects/01.jpg" alt="01">
+                    <div class="objects-slider__item-content">
+                      <h3 class="objects-slider__item-title">
+                        ЛЮКИ НА ГЛАВНОЙ УЛИЦЕ НИЖНЕГО НОВГОРОДА
+                      </h3>
+                      <span class="objects-slider__item-descr">
+                        ООО ГК «ТрансСтройКомплект» является эксклюзивным дистрибьютором завода ООО «Азертехнолайн» на
+                        территории Российской Федерации. ООО «Азертехнолайн» - крупнейший завод чугунного литья в
+                        Республике Азербайджан.
+                      </span>
+                      <a class="btn objects-slider__item-btn" href="#">
+                        <span>Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="objects-slider__item">
+                    <img src="images/our-objects/01.jpg" alt="01">
+                    <div class="objects-slider__item-content">
+                      <h3 class="objects-slider__item-title">
+                        ЛЮКИ НА ГЛАВНОЙ УЛИЦЕ НИЖНЕГО НОВГОРОДА
+                      </h3>
+                      <span class="objects-slider__item-descr">
+                        ООО ГК «ТрансСтройКомплект» является эксклюзивным дистрибьютором завода ООО «Азертехнолайн» на
+                        территории Российской Федерации. ООО «Азертехнолайн» - крупнейший завод чугунного литья в
+                        Республике Азербайджан.
+                      </span>
+                      <a class="btn objects-slider__item-btn" href="#">
+                        <span>Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="our-objects__btn btn" href="#">
+              <span>Смотреть все объекты</span>
+            </a>
+          </div>
+          <div class="objects-slider__prev swiper-button-prev"></div>
+          <div class="objects-slider__next swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container">
+          <div class="info__inner">
+            <div class="news">
+              <h2 class="title info__title">
+                Новости
+              </h2>
+              <div class="news__items">
+                <div class="news__item">
+                  <span class="news__item-date">02.01.21</span>
+                  <h3 class="news__item-title"><a href="#">ЛЮК НА ГЛАВНОЙ УЛИЦЕ НИЖНЕГО НОВГОРОДА</a></h3>
+                  <p class="news__item-text">
+                    На главной улице Нижнего Новгорода установлен красивейший люк нашей работы! Большая Покровская улица
+                    расположена в историческом центре города и считается одной из самых старинных, а до 1917 года
+                    считалась исключительно дворянской...
+                    <a href="#">
+                      Читать далее
+                    </a>
+                  </p>
+                </div>
+                <div class="news__item">
+                  <span class="news__item-date">02.01.21</span>
+                  <h3 class="news__item-title"><a href="#">ЛЮК НА ГЛАВНОЙ УЛИЦЕ НИЖНЕГО НОВГОРОДА</a></h3>
+                  <p class="news__item-text">
+                    На главной улице Нижнего Новгорода установлен красивейший люк нашей работы! Большая Покровская улица
+                    расположена в историческом центре города и считается одной из самых старинных, а до 1917 года
+                    считалась исключительно дворянской...
+                    <a href="#">
+                      Читать далее
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <a class="btn news__btn" href="#">
+                <span>Все новости</span>
+              </a>
+            </div>
+            <div class="certificates">
+              <h2 class="title info__title">Сертификаты</h2>
+              <div class="certificates__items">
+                <div class="certificates__item">
+                  <a data-fancybox="certificates" href="images/certificates/01.jpg">
+                    <img src="images/certificates/01.jpg" alt="01">
+                  </a>
+                  <span class="certificates__item-descr">Сертификат соответствия</span>
+                </div>
+                <div class="certificates__item">
+                  <a data-fancybox="certificates" href="images/certificates/01.jpg">
+                    <img src="images/certificates/01.jpg" alt="01">
+                  </a>
+                  <span class="certificates__item-descr">Сертификат соответствия</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="director">
+        <div class="container">
+          <div class="director__inner">
+            <img src="images/director.jpg" alt="director">
+            <div class="director__content">
+              <h2 class="title director__title">Обращение директора</h2>
+              <p>
+                “ООО ГК «ТрансСтройКомплект» является эксклюзивным дистрибьютором завода ООО «Азертехнолайн» на
+                территории Российской Федерации. ООО «Азертехнолайн» является крупнейшим заводом чугунного литья в
+                Республике Азербайджан.
+              </p>
+              <p>
+                В работе с партнёрами мы стараемся учесть все особенности данной организации, предложить наиболее
+                эффективные решения с точки зрения стоящих задач и бюджета. Мы практикуем гибкий подход к сотрудничеству
+                и стараемся выполнять все пожелания наших заказчиков”.
+              </p>
+              <span class="director__name">Иванов В.В.</span>
+            </div>
+            <form class="questions-form form-send">
+
+              <input type="hidden" name="project_name" value="tsk">
+              <input type="hidden" name="admin_email" value="maddmerf@gmail.com">
+              <input type="hidden" name="form_subject" value="Вопросы">
+
+              <h2 class="questions-form__title">
+                Остались вопросы?
+              </h2>
+              <span class="questions-form__subtitle">
+                Оставьте заявку, и наш специалист свяжется с вами <b>в течение 20 минут</b>
+              </span>
+              <input class="input questions-form__input" type="text" name="Имя" placeholder="имя" required>
+              <input class="input questions-form__input" type="tel" name="Номер" placeholder="номер телефона" required>
+              <button class="btn btn--orange" type="submit"><span>Оставить заявку</span></button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us">
+        <div class="container">
+          <h2 class="title contact-us__title">
+            Свяжитесь с нами
+          </h2>
+          <div class="contact-us__inner">
+            <div class="contact-us__item">
+              <img src="images/icons/marker-bl.svg" alt="address">
+              <span>192102 г. Санкт-Петербург <br> ул. Самойловой д.5</span>
+            </div>
+            <div class="contact-us__item">
+              <img src="images/icons/phone-bl.svg" alt="phone">
+              <div class="contact-us__item-phones">
+                <a href="tel:+78122453141">+7 (812) 245-31-41</a>
+                <a href="tel:+74950320741">+7 (495) 032-07-41</a>
+              </div>
+            </div>
+            <div class="contact-us__item">
+              <img src="images/icons/mail-bl.svg" alt="mail">
+              <a href="mailto:info@tsk-gk.ru">info@tsk-gk.ru</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ya-map">
+
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <div class="logo">
+              <a class="logo__link" href="/">
+                <img src="images/logo-footer.png" alt="logo">
+              </a>
+            </div>
+            <div class="footer__info-content">
+              <a class="privacy" href="#">Политика конфиденциальности</a>
+              <span class="creator">Разработка и продвижение <a class="creator__link" target="_blank"
+                  href="https://silverduck.net/">SilverDuck</a>, 2021</span>
+            </div>
+          </div>
+          <div class="footer__socials">
+            <ul class="footer__socials-list">
+              <li><a href="#"><img src="images/icons/instagram-wt.svg" alt="instagram"></a></li>
+              <li><a href="#"><img src="images/icons/youtube-wt.svg" alt="youtube"></a></li>
+            </ul>
+            <span class="footer__socials-descr">Актуальные новости <br> в социальных сетях</span>
+          </div>
+          <div class="footer__menus">
+            <div class="footer__menu">
+              <h3 class="footer__menu-title">
+                каталог
+              </h3>
+              <ul class="footer__menu-list">
+                <li><a href="#">Люки</a></li>
+                <li><a href="#">Решетки и крышки из ВЧШГ</a></li>
+                <li><a href="#">Дождеприемники из ВЧШГ</a></li>
+                <li><a href="#">Уличная и парковая мебель</a></li>
+                <li><a href="#">Чугунные воронки и трапы</a></li>
+                <li><a href="#">Запорная арматура из ВЧШГ</a></li>
+                <li><a href="#">Водоотводные лотки</a></li>
+                <li><a href="#">Товары со скидкой</a></li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h3 class="footer__menu-title">
+                информация
+              </h3>
+              <ul class="footer__menu-list">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Наши объекты</a></li>
+                <li><a href="#">Проектировщикам</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <h3 class="footer__contacts-title">наши Контакты</h3>
+            <div class="footer__contacts-items">
+              <div class="footer__contacts-item">
+                <img src="images/icons/marker.svg" alt="address">
+                <span>192102 г. Санкт-Петербург <br> ул. Самойловой д.5</span>
+              </div>
+              <div class="footer__contacts-item">
+                <img src="images/icons/phone.svg" alt="phone">
+                <div class="footer__contacts-phones">
+                  <a href="tel:+78122453141">+7 (812) 245-31-41</a>
+                  <a href="tel:+74950320741">+7 (495) 032-07-41</a>
+                </div>
+              </div>
+              <div class="footer__contacts-item">
+                <img src="images/icons/mail.svg" alt="mail">
+                <a href="mailto:info@tsk-gk.ru">info@tsk-gk.ru</a>
+              </div>
+            </div>
+            <button class="btn callback footer__btn">
+              <span>
+                Заказать звонок
+              </span>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-callback">
+    <form class="modal-form form-send form-send">
+
+      <input type="hidden" name="project_name" value="tsk">
+      <input type="hidden" name="admin_email" value="maddmerf@gmail.com">
+      <input type="hidden" name="form_subject" value="Новая заявка">
+
+      <h2 class="modal__title">
+        Оставить заявку
+      </h2>
+      <span class="modal-form__form-subtitle">
+        Мы свяжемся с вами в течение <b>20 минут</b>
+      </span>
+      <input class="input modal-form__form-input" type="tel" name="Номер" placeholder="Номер телефона" required>
+      <input class="input modal-form__form-input" type="email" name="E-mail" placeholder="E-mail" required>
+      <button class="btn modal-form__btn" type="submit"><span>Отправить</span></button>
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script>
+    var callbackBtns = document.querySelectorAll('.callback');
+
+    var callbackModal = new tingle.modal({
+      footer: false,
+      stickyFooter: false,
+      closeMethods: ['overlay', 'button', 'escape'],
+      closeLabel: "Закрыть",
+      cssClass: ['callback-form'],
+    });
+
+    callbackModal.setContent(document.querySelector(".modal-callback").innerHTML);
+
+    callbackBtns.forEach((callbackBtn) => {
+      callbackBtn.addEventListener('click', function () {
+        callbackModal.open();
+      });
+    });
+  </script>
+</body>
+
+</html>

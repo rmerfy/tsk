@@ -1,0 +1,266 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+button,
+span,
+a,
+label {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: "ubuntu", sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+input,
+button {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.page--scroll {
+    margin-top: 172px;
+}
+
+.header--fixed {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    animation: scroll 0.6s;
+    box-shadow: 0 0 8px 1px rgba(#000, 0.3);
+    .header__top-inner {
+        padding: 2px 0 3px 0;
+    }
+    .logo img {
+        width: 264px;
+    }
+    .menu__list a {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+    .carret {
+        top: 5px;
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.container {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-slider {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+input {
+    padding: 9px 14px;
+    font-size: 12px;
+    color: $grey;
+    border: 1px solid $grey;
+    &:focus {
+        border: 1px solid $blue;
+    }
+}
+
+.title {
+    position: relative;
+    padding-bottom: 30px;
+    margin: 0 0 20px 0;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background: $orange;
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    padding: 9px 30px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    span {
+        position: relative;
+        margin-right: 15px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 3px;
+            right: -15px;
+            background-image: url(../images/icons/arrow.svg);
+            @include bg-style;
+        }
+    }
+}
+
+.btn--orange {
+    border: 1px solid $orange;
+    background: $orange;
+    color: #fff;
+    &:hover,
+    &:focus {
+        background: #fff;
+        color: $orange;
+        span::after {
+            background-image: url(../images/icons/arrow-or.svg);
+        }
+    }
+}
+
+.tingle-modal {
+    background: rgba(0, 0, 0, 0.3);
+}
+.tingle-modal:before {
+    backdrop-filter: blur(1px);
+}
+
+.tingle-modal-box {
+    max-width: 290px;
+}
+.tingle-modal-box__content {
+    padding: 30px 15px;
+}
+
+body.mouse {
+    .menu-item-has-children:hover > ul.sub-menu {
+        display: flex;
+    }
+}
+
+body.touch {
+    .menu-item-has-children > ul.sub-menu.open {
+        display: flex;
+    }
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+.menu-item-has-children {
+    position: relative;
+}
+
+.sub-menu {
+    @include ul-reset;
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    left: 0;
+    top: 100%;
+    width: 1150px;
+    z-index: 9;
+    animation: 0.4s fadeInFromNone;
+    li {
+        border-top: 1px solid rgba($grey, 0.3);
+        background: #fff;
+        padding: 0 15px;
+        a {
+            display: flex;
+            align-items: center;
+            color: #000;
+            text-align: left;
+            text-transform: inherit;
+            &:hover {
+                color: $blue;
+                background: none;
+            }
+            img {
+                margin-right: 24px;
+                width: 95px;
+                height: 70px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.carret {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/icons/carret.svg);
+    transition: all .2s ease-in-out;
+}
+
+.carret.active {
+    transform: rotate(180deg);
+}
